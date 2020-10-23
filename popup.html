@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>Facebook Message Manager</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <h4>Manage Facebook Messages</h4>
+</div>
+<div class="scroll">
+    <button id="openMessenger" class="btn btn-border color-1 material-design">Open Messages</button>
+    <button id="removeMessages" class="btn btn-border color-1 material-design">Delete Messages</button>
+
+    <br>
+    <label id="dateLabel" for="dateBefore">Delete Messages Before:</label>
+    <br>
+    <input id="dateBefore" type="date" name="date-before"
+       value=""
+       min="" max="">
+
+    <br><br>
+    
+    <div id="excludedLabelsLabel" class="">
+        <a id="updateLabels" class="icon-loop2" href="#" title="Update labels from Facebook"> </a>
+        Keep messages with these labels:
+    </div>
+    <div id="excludedLabels" class="">
+
+    </div>
+</div>
+<script src="libs/jquery-3.5.1.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
